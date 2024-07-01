@@ -13,15 +13,17 @@
       <img src="./img/title.png" alt="1만 시간의 법칙" class="title" />
     </header>
     <main>
-      <section class="intro">
+      <div class="wrap-intro">
         <h2>“연습은 어제의 당신보다 당신을 더 낫게 만든다.”</h2>
         <blockquote>
           <em>1만 시간의 법칙</em>은<br />어떤 분야의 전문가가 되기 위해서는<br />최소한
           1만 시간의 훈련이 필요하다는 법칙이다.
         </blockquote>
-      </section>
-      <section class="form">
-        <form action="" method="get">
+      </div>
+      <div class="wrap-form">
+        <!-- form action: 양식 데이터를 처리할 URL (데이터를 어디로 보낼것인지 지정)
+        - 지정하지 않으면 데이터는 form이 있는 페이지의 URL로 보내짐 -->
+        <form method="get">
           <div class="flex">
             <label for="field" class="sr-only">전문가가 되고싶은 영역</label>
             <p>나는</p>
@@ -41,8 +43,8 @@
             </button>
           </div>
         </form>
-      </section>
-      <section class="result">
+      </div>
+      <div class="wrap-result">
         <div class="flex">
           당신은<strong>프로그래밍</strong>전문가가 되기 위해서
         </div>
@@ -53,7 +55,7 @@
           <button class="btn-primary">훈련하러 가기 GO!GO!</button>
           <button id="showDialogBtn">공유하기</button>
         </div>
-      </section>
+      </div>
     </main>
     <footer>
       <img src="./img/logo.png" alt="weniv" />
@@ -68,7 +70,7 @@
       <h2>화이팅!!<span class="pc-only">♥♥♥</span></h2>
       <p>당신의 꿈을 응원합니다!</p>
       <img src="./img/licat.png" alt="" />
-      <button href="/" id="closeBtn" class="btn-primary btn-m-rec">
+      <button id="closeBtn" class="btn-primary btn-m-rec">
         종료하고 진짜<br class="m-only" />
         훈련하러 가기 GO!GO!
       </button>
