@@ -34,6 +34,10 @@
       format("opentype");
 }
 
+html {
+  font-size: 62.5%;
+}
+
 .sr-only {
   position: absolute;
   left: -9999px;
@@ -44,10 +48,6 @@
 }
 .m-only {
   display: none;
-}
-
-html {
-  font-size: 62.5%;
 }
 
 body {
@@ -84,6 +84,7 @@ button {
   font-family: "GmarketSansBold";
   font-size: 2.4rem;
   color: #5b2386;
+  background-color: #fff;
   padding: 21px 49px;
   border-radius: 100px;
   cursor: pointer;
@@ -203,6 +204,7 @@ dialog {
   padding: 68px;
   border-radius: 30px;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+  overflow: hidden;
 
   h2 {
     font-size: 9.6rem;
