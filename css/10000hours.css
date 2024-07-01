@@ -42,6 +42,9 @@
   height: 1px;
   overflow: hidden;
 }
+.m-only {
+  display: none;
+}
 
 html {
   font-size: 62.5%;
@@ -54,6 +57,7 @@ body {
   font-family: "GmarketSansMedium";
   background-color: #662d91;
   color: #fff;
+  word-break: keep-all;
 }
 
 header {
@@ -84,7 +88,7 @@ button {
   border-radius: 100px;
   cursor: pointer;
 
-  &.primary {
+  &.btn-primary {
     background-color: #fcee21;
   }
 }
@@ -189,8 +193,40 @@ footer {
     margin-top: 20px;
   }
 }
+dialog {
+  font-family: "OTEnjoystoriesBA";
+  font-size: 3.6rem;
+  text-align: center;
+  color: #5b2386;
+  width: 800px;
+  max-width: calc(100% - 30px);
+  padding: 68px;
+  border-radius: 30px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+
+  h2 {
+    font-size: 9.6rem;
+  }
+  p {
+    margin: 4px 0 28px 0;
+  }
+  img {
+    max-width: 100%;
+  }
+  button {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    border: 0;
+    margin-top: 68px;
+  }
+}
 
 @media (max-width: 767px) {
+  .pc-only {
+    display: none;
+  }
+  .m-only {
+    display: initial;
+  }
   body {
     max-width: 560px;
     margin: 0 auto;
@@ -204,6 +240,11 @@ footer {
   button {
     font-size: 1.4rem;
     padding: 13px 17px 12px;
+    &.btn-m-rec {
+      padding: 19px 36px 17px;
+      border-radius: 13px;
+      max-width: 242px;
+    }
   }
   section.intro {
     h2 {
@@ -239,11 +280,6 @@ footer {
         height: 48px;
         bottom: -10px;
       }
-      button {
-        padding: 19px 36px 17px;
-        border-radius: 13px;
-        max-width: 242px;
-      }
     }
   }
   section.result {
@@ -270,6 +306,19 @@ footer {
     }
     p {
       margin-top: 17px;
+    }
+  }
+  dialog {
+    font-size: 3.6rem;
+    padding: 40px 44px;
+    h2 {
+      font-size: 6.4rem;
+    }
+    p {
+      margin: 0 0 20px 0;
+    }
+    button {
+      margin-top: 20px;
     }
   }
 }

@@ -35,8 +35,9 @@
             <p>시간씩 훈련할 것이다.</p>
           </div>
           <div class="wrap-btn">
-            <button type="submit" class="primary">
-              나는 며칠 동안 훈련을 해야 1만 시간이 될까?
+            <button type="submit" class="btn-primary btn-m-rec">
+              나는 며칠 동안 훈련을 해야<br class="m-only" />
+              1만 시간이 될까?
             </button>
           </div>
         </form>
@@ -49,8 +50,8 @@
           대략<strong>5110</strong>일 이상 훈련하셔야 합니다! :)
         </div>
         <div class="wrap-btn">
-          <button class="primary">훈련하러 가기 GO!GO!</button>
-          <button>공유하기</button>
+          <button class="btn-primary">훈련하러 가기 GO!GO!</button>
+          <button id="showDialogBtn">공유하기</button>
         </div>
       </section>
     </main>
@@ -62,5 +63,28 @@
         수정 및 재배포, 무단 도용 시 법적인 문제가 발생할 수 있습니다.
       </p>
     </footer>
+
+    <dialog id="shareDialog">
+      <h2>화이팅!!<span class="pc-only">♥♥♥</span></h2>
+      <p>당신의 꿈을 응원합니다!</p>
+      <img src="./img/licat.png" alt="" />
+      <button href="/" id="closeBtn" class="btn-primary btn-m-rec">
+        종료하고 진짜<br class="m-only" />
+        훈련하러 가기 GO!GO!
+      </button>
+    </dialog>
+    <script>
+      const dialog = document.getElementById("shareDialog");
+      const showDialogBtn = document.getElementById("showDialogBtn");
+      const closeBtn = document.getElementById("closeBtn");
+
+      showDialogBtn.addEventListener("click", () => {
+        dialog.showModal();
+      });
+
+      closeBtn.addEventListener("click", () => {
+        dialog.close();
+      });
+    </script>
   </body>
 </html>
