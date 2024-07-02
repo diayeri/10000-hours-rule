@@ -100,7 +100,7 @@ button {
 }
 
 .wrap-intro {
-  h2 {
+  q {
     font-family: "OTEnjoystoriesBA";
     font-size: 3.6rem;
     font-weight: bold;
@@ -249,7 +249,7 @@ dialog {
     }
   }
   .wrap-intro {
-    h2 {
+    q {
       font-size: 2.2rem;
     }
     blockquote {
@@ -318,6 +318,9 @@ dialog {
     }
     p {
       margin: 0 0 20px 0;
+    }
+    img {
+      width: 242px;
     }
     button {
       margin-top: 20px;
