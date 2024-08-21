@@ -3,6 +3,7 @@ import Footer from "./components/Footer";
 import Intro from "./components/Intro";
 import Form from "./components/Form";
 import Result from "./components/Result";
+import Dialog from "./components/Dialog";
 import "./App.css";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Result />
       </main>
       <Footer />
+      <Dialog />
     </>
   );
 }
