@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/10000-hours-rule/static/css/main.8d1c5244.css",
+    "main.js": "/10000-hours-rule/static/js/main.a46e4308.js",
+    "static/media/title.png": "/10000-hours-rule/static/media/title.65ff732e334118c5b073.png",
+    "static/media/clock.png": "/10000-hours-rule/static/media/clock.aa3294909edfbab96c13.png",
+    "index.html": "/10000-hours-rule/index.html",
+    "main.8d1c5244.css.map": "/10000-hours-rule/static/css/main.8d1c5244.css.map",
+    "main.a46e4308.js.map": "/10000-hours-rule/static/js/main.a46e4308.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8d1c5244.css",
+    "static/js/main.a46e4308.js"
+  ]
+}
